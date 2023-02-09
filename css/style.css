@@ -1,0 +1,16 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: aqua;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+    .conteiner div,
+    .conteiner section,
+    .footer {
+        border: 2px solid black;
+    }
