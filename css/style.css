@@ -206,6 +206,11 @@
     padding-bottom: 10px;
     margin-top: 0px;
 }
+    .link5 h3,
+    .link1 h3,
+    .link2 h3 {
+        text-align: center;
+    }
 
 .footer {
     display: flex;
