@@ -8,6 +8,7 @@
 
 .conteiner {
     max-width: 1000px;
+    min-width: 300px;
     display: grid;
     grid-template-columns: 50% auto auto;
     grid-template-rows: 20% 10% 40% 10% 40% 10% 40% 10% 20% 20% 15%;
@@ -52,7 +53,11 @@
 
 .video1 {
     padding: 10px;
-}    
+}
+    .video1 iframe {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
 
 .pdf2 {
     padding: 10px;
@@ -69,3 +74,20 @@
         width: 100%;
         height: 100%;
     }
+
+@media screen and (max-width: 750px){
+    .video1,
+    .pdf1,
+    .pdf2,
+    .pdf3 {
+        grid-column: 1 / span 3;
+    }
+
+    .titulo1,
+    .titulo2,
+    .titulo3,
+    .titulo4,
+    .footer {
+        height: 6rem;
+    }
+}
