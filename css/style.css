@@ -9,9 +9,9 @@
     max-width: 1000px;
     min-width: 350px;
     display: grid;
-    grid-template-columns: 50% auto auto;
-    grid-gap: 0px;
+    grid-template-columns: 50% auto;
     margin: 10px;
+    justify-content: center;
 }
 
     .conteiner div,
@@ -27,25 +27,23 @@
 .titulo3,
 .titulo4,
 .footer {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     text-align: center;
 }
 
 .banner {
-    width: 100%;
+   min-width: 350px;
 }
     .banner img {
         width: 100%;
         height: 100%;
     }
 
-.titulo1 {
-    height: 3rem;
-}
-.pdf1,
-.link1,
-.link2 {
-    grid-column: 2 / span 2;
+.titulo1,
+.titulo2,
+.titulo3,
+.titulo4 {
+    margin: 10px ;
 }
 
 .pdf1 {
@@ -53,11 +51,14 @@
 }
     .pdf1 iframe {
         width: 100%;
-        height: 100%;
+        height: 21rem;
     }
 
 .video1 {
     padding: 10px;
+    /* para centrarlo horizontalmente es necesario que le ponga el display flex al padre y luego aplicar align items */
+    display: flex;
+    align-items: center;
 }
     .video1 iframe {
         width: 100%;
@@ -69,7 +70,24 @@
 }
     .pdf2 iframe {
         width: 100%;
-        height: 100%;
+        height: 21rem;
+    }
+
+.link1,
+.link2,
+.link3,
+.link4,
+.link5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+    .link1 img,
+    .link2 img,
+    .link3 img,
+    .link4 img,
+    .link5 img {
+        width: 9rem;
     }
 
 .pdf3 {
@@ -77,7 +95,7 @@
 }
     .pdf3 iframe {
         width: 100%;
-        height: 100%;
+        height: 21rem;
     }
 
 @media screen and (max-width: 750px){
@@ -85,19 +103,15 @@
     .video1,
     .pdf1,
     .pdf2,
-    .pdf3 {
-        grid-column: 1 / span 3;
-    }
-
-    .titulo1,
-    .titulo2,
-    .titulo3,
-    .titulo4,
-    .footer {
-        height: 6rem;
-    }
-
-   
-
-    
+    .pdf3,
+    .link1,
+    .link2,
+    .link3,
+    .link4,
+    .link5 {
+        grid-column: 1 / span 2;
+    }   
+    .pdf1 iframe {
+        height: 21rem;
+    } 
 }
