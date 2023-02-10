@@ -66,6 +66,12 @@
     margin: 30px 10px 0px 10px;
     text-align: center;
 }
+.titulo1 h2,
+.titulo2 h2,
+.titulo3 h2,
+.titulo4 h2 {
+    font-size: 2.1em;
+}
 
 .pdf1 {
     padding: 10px;
