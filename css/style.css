@@ -8,10 +8,10 @@
 
 .conteiner {
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 350px;
     display: grid;
     grid-template-columns: 50% auto auto;
-    grid-template-rows: 20% 10% 40% 10% 40% 10% 40% 10% 20% 20% 15%;
+    grid-gap: 0px;
     margin: 10px;
 }
 
@@ -32,6 +32,13 @@
     text-align: center;
 }
 
+.banner {
+    height: 15rem;
+}
+
+.titulo1 {
+    height: 3rem;
+}
 .pdf1,
 .link1,
 .link2 {
